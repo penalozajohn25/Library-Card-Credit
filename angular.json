@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +125,50 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-credit-card"
+    },
+    "credit-card": {
+      "projectType": "library",
+      "root": "projects/credit-card",
+      "sourceRoot": "projects/credit-card/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/credit-card/tsconfig.lib.json",
+            "project": "projects/credit-card/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/credit-card/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/credit-card/src/test.ts",
+            "tsConfig": "projects/credit-card/tsconfig.spec.json",
+            "karmaConfig": "projects/credit-card/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/credit-card/tsconfig.lib.json",
+              "projects/credit-card/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-credit-card",
+  "cli": {
+    "analytics": "e78e0644-7af4-48c9-b5d7-d88a605c1bcd"
+  }
 }

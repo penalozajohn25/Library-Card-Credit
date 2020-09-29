@@ -12,6 +12,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/credit-card/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/credit-card/tsconfig.spec.json"
     }
 ]
 }
