@@ -105,7 +105,7 @@ export class AppComponent {
 ### Configuration
 
 | Input  | Type | Required | Description |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- |
 | name  | `string` | yes | company name |
 | color  | `string` | yes | background color |
 | src  | `sting` | yes | company image |
