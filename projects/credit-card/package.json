@@ -1,6 +1,6 @@
 {
-  "name": "credit-card",
-  "version": "0.0.1",
+  "name": "credit-card-component",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"

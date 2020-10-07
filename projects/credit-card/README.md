@@ -1,21 +1,27 @@
 # CreditCard
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.14.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) *version 10.0.14.
 
 ### Installation
 
-Install via [npm][npm] package manager 
-
 ```bash
-npm install @ng-credit-card --save
+npm install credit-card-component jquery --save
 ```
+
+### Export Jquery in angular.json
+```bash
+    "scripts": [
+       "./node_modules/jquery/dist/jquery.min.js"
+    ]
+```
+
 
 ### Usage
 
 Import `credit-card` module
 
 ```js
-import { CreditCardModule } from '@kolkov/angular-editor';
+import { CreditCardModule } from 'credit-card-component';
 
 @NgModule({
   imports: [CreditCardModule ]
@@ -110,10 +116,13 @@ export class AppComponent {
 | color  | `string` | yes | background color |
 | src  | `sting` | yes | company image |
 
-## Creators
+### Info
 
-**John Peñaloza**
+4: VISA, 51 -> 55: MasterCard, 36-38-39: DinersClub, 34-37: American Express, 65: Discover, 5019: dankort
+     
 
-* <https://github.com/penalozajohn25>
+## Git
+
+* <https://github.com/penalozajohn25/Library-Card-Credit>
 
 
